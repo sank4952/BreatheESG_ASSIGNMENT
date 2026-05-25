@@ -44,8 +44,30 @@ Sample files are in `samples/`. They intentionally include realistic breakage:
 
 Recommended deployment:
 
-- Backend: Render web service using `node-backend/render.yaml`
-- Database: Render PostgreSQL
+- Backend: Render web service using root `render.yaml`
 - Frontend: Vercel with `VITE_API_URL=https://<backend-host>/api`
 
 For a production-grade submission, replace JSON-file persistence with a managed database. The current Node backend keeps the data model and API understandable for the prototype.
+
+### Render Backend
+
+1. Push this repository to GitHub.
+2. In Render, create a new Blueprint or Web Service from the repository.
+3. Use `node-backend` as the root directory if creating a Web Service manually.
+4. Build command: `npm install && npm run seed`
+5. Start command: `npm start`
+6. Copy the deployed backend URL, for example `https://breathe-esg-node-api.onrender.com`.
+
+### Vercel Frontend
+
+1. Import the same GitHub repository into Vercel.
+2. Set the project root directory to `frontend`.
+3. Build command: `npm run build`
+4. Output directory: `dist`
+5. Add environment variable:
+
+```text
+VITE_API_URL=https://<your-render-backend-url>/api
+```
+
+6. Deploy and use the generated Vercel URL as the live app link.
