@@ -2,9 +2,7 @@
 
 ## SAP Choice
 
-I chose a flat CSV export modeled on SAP material/goods movement data rather than live IDoc, BAPI, or OData integration.
-
-Why:
+The project having a flat CSV export modeled on SAP material/goods movement data rather than live IDoc, BAPI, or OData integration.
 
 - sustainability teams often receive extracts from SAP rather than credentials to SAP APIs
 - a flat export is realistic for a four-day prototype
@@ -26,15 +24,9 @@ Ignored:
 - multilingual schemas beyond a few common field aliases
 - material master joins beyond a small mapping table
 
-Question for PM:
-
-Which SAP extract can the client actually provide in week one: material document export, purchasing report, custom BW extract, OData endpoint, or IDoc drop?
-
 ## Utility Electricity Choice
 
-I chose portal CSV exports rather than PDF OCR or live utility APIs.
-
-Why:
+It have a CSV exports rather than PDF OCR or live utility APIs.
 
 - facilities teams commonly download bills or usage CSVs from utility portals
 - PDF OCR is a separate extraction problem and would dominate the prototype
@@ -57,15 +49,9 @@ Ignored:
 - market-based vs location-based Scope 2
 - meter-to-building allocation
 
-Question for PM:
-
-Do auditors need monthly allocation by calendar month, or is billing-period reporting acceptable for this first workflow?
-
 ## Corporate Travel Choice
 
-I chose a CSV export shaped like travel/expense platform data rather than live Concur/Navan OAuth.
-
-Why:
+It have a CSV export shaped like travel/expense platform data rather than live Concur/Navan OAuth.
 
 - real corporate travel integrations require tenant-specific OAuth, scopes, and data sharing agreements
 - travel exports often contain expense category, itinerary, airport codes, class, vendor, and cost center
@@ -87,15 +73,9 @@ Ignored:
 - booking cancellations/refunds
 - exact geospatial distance calculation
 
-Question for PM:
-
-Should travel emissions be based on booked trips, expensed trips, or completed trips? Those can differ materially.
-
 ## Review UX Choice
 
-I built one analyst dashboard instead of many CRUD pages.
-
-Why:
+It have a one analyst dashboard instead of many CRUD pages.
 
 - the core workflow is triage, not record administration
 - the analyst needs to see source, normalized activity, flags, CO2e, status, and actions in one place
@@ -104,8 +84,6 @@ Why:
 ## Synchronous Processing Choice
 
 Uploads process synchronously.
-
-Why:
 
 - sample files are small
 - the prototype is easier to deploy
