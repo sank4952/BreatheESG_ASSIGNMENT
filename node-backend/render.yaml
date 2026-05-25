@@ -2,10 +2,10 @@ services:
   - type: web
     name: breathe-esg-node-api
     env: node
+    plan: free
     rootDir: node-backend
     buildCommand: npm install && npm run seed
     startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
-
