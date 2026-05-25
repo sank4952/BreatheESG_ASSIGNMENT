@@ -1,0 +1,7 @@
+employee_id,category,transaction_date,start_date,end_date,from_airport,to_airport,class,distance_km,nights,vendor,cost_center
+EMP001,Flight,2025-01-12,2025-01-12,2025-01-12,BLR,DEL,economy,,,IndiGo,Sales
+EMP002,Flight,2025-01-18,2025-01-18,2025-01-19,BOM,LHR,business,,,British Airways,Exec
+EMP003,Hotel,2025-01-18,2025-01-18,2025-01-23,,,,,5,Marriott,Exec
+EMP004,Taxi,2025-02-07,2025-02-07,2025-02-07,,,,86,,Uber,Sales
+EMP005,Flight,2025-02-19,2025-02-19,2025-02-19,BLR,NRT,economy,,,ANA,Engineering
+

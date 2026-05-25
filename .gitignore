@@ -1,0 +1,7 @@
+node-backend/data/
+frontend/dist/
+frontend/node_modules/
+node-backend/node_modules/
+frontend/.env
+__pycache__/
+*.pyc
